@@ -32,7 +32,7 @@ cd ~
 wget http://jeffbaier.com/school/capstone/tomato_src.tgz
 tar zxvf tomato_src.tgz
 }}}
-Now we need to replace the stock firmware web gui with a modified one. We will be downloading the latest code from our subversion repository. Choose one of the following branches and follow the instructions.
+Now we need to replace the stock firmware web gui with a modified one. We will be downloading the latest code from our subversion repository. Choose one of the following branches or the original web gui, and follow the instructions.
 
  ===eRUPPtion===
  First remove the existing www and httpd folders.
@@ -44,6 +44,17 @@ Now we need to replace the stock firmware web gui with a modified one. We will b
  {{{
  svn checkout http://nextech-wrt.googlecode.com/svn/branches/eRUPPtion .
  }}} 
+ ===Vermilion===
+ First remove the existing www and folder.
+ {{{
+ cd ~/tomato/release/src/router/
+ rm -rf www
+ }}} 
+ Then download the modified one from SVN.
+ {{{
+ svn checkout http://nextech-wrt.googlecode.com/svn/branches/vermilion .
+ }}} 
+
  ===Tomato default web gui===
  First remove the existing www folder.
  {{{
