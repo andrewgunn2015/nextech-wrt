@@ -9,7 +9,7 @@ This document will give you basic instructions on how to compile the Tomato firm
 
 If you already have a Linux machine ready, skip to the next section.
 
-I use VMware Fusion to run a virtual machine running Debian Linux. My virtual machine has a 10gb virtual hard drive with its space not all allocated at once, and 512 mb of RAM. Download the [http://cdimage.debian.org/debian-cd/4.0_r6/i386/iso-cd/debian-40r6-i386-netinst.iso TinyCD stable Debian] and install only a Standard System.
+I use VMware Fusion to run a virtual machine running Debian Linux. My virtual machine has a 10gb virtual hard drive with its space not all allocated at once, and 512 mb of RAM. Download the [http://ftp.acc.umu.se/debian-cd/5.0.1/i386/iso-cd/debian-501-i386-netinst.iso TinyCD stable Debian] and install only a Standard System.
 
 = Downloading the necessary files =
 
