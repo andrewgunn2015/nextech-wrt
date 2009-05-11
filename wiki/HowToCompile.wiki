@@ -39,18 +39,19 @@ First remove the existing www and nvram folders.
  cd ~/tomato/release/src/router/
  rm -rf www nvram
  }}} 
- Then download the modified ones from SVN.
+Then download the modified ones from SVN.
  {{{
  svn checkout http://nextech-wrt.googlecode.com/svn/trunk .
  }}} 
 
 
 =Configure and Compile=
-Now we need to create a symbolic link from the cross compiler to the /opt/brcm directory and add it to the environment PATH.
+Now we need to create a symbolic link from the cross compiler to the /opt/brcm directory and add it to the environment PATH. This will only take affect when you next login, so also set the PATH variable now.
 {{{
 sudo ln -s ~/tomato/tools/brcm/ /opt/brcm
 echo 'PATH=$PATH:/opt/brcm/hndtools-mipsel-uclibc/bin:/opt/brcm/hndtools-mipsel-linux/bin' >> ~/.bash_profile
 echo 'export PATH' >> ~/.bash_profile
+PATH=$PATH:/opt/brcm/hndtools-mipsel-uclibc/bin:/opt/brcm/hndtools-mipsel-linux/bin
 }}}
 Everything is ready now. Change into the appropriate directory and start compiling.
 {{{
